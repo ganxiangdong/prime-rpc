@@ -1,0 +1,34 @@
+{
+  "name": "xd/x-rpc",
+  "keywords": ["async","asynchronism", "rpc", "simple", "light"],
+  "homepage": "https://github.com/ganxiangdong/x-rpc",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "xiangdonggan",
+      "email": "phpwww@126.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "xd/async-http" : ">=1.0.1",
+    "ext-swoole": ">=1.7.17"
+  },
+
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    },
+    {
+      "packagist": false
+    }
+  ],
+
+  "autoload": {
+    "psr-4": {
+      "Xd\\PrimeRpc\\": "src/"
+    }
+  }
+}
