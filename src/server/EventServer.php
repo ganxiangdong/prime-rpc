@@ -27,7 +27,6 @@ class EventServer
      */
     public  static function receive($server, $fd, $reactorId, $data)
     {
-        var_dump($server->worker_pid.'=');
         //拆包
         $header = unpack('N', substr($data,0, 4));
 
