@@ -1,6 +1,6 @@
 {
-  "name": "xd/x-rpc",
-  "keywords": ["async","asynchronism", "rpc", "simple", "light"],
+  "name": "xd/prime-rpc",
+  "keywords": ["async","asynchronism", "rpc", "simple", "light", "basal"],
   "homepage": "https://github.com/ganxiangdong/x-rpc",
   "license": "MIT",
   "authors": [
