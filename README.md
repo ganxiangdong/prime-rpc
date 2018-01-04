@@ -73,4 +73,4 @@ composer require xd/prime-rpc
    shutdown: sh vender/src/server/bins/shutdown.sh        
    reload: sh vender/src/server/bins/reload.sh
    
-4. more information please visit github.com/swoole/swoole-src
+4. More information please visit github.com/swoole/swoole-src
