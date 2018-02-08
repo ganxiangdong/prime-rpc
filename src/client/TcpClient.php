@@ -34,16 +34,17 @@ class TcpClient
     ];
 
     /**
-     * Client constructor.
+     * TcpClient constructor.
      * @param $host
      * @param $port
+     * @param float $everyIoTimeout 每次IO的超时时间，如每次connect、send、receive 的超时时间
      * @throws ClientException
      */
-    public function __construct($host, $port)
+    public function __construct($host, $port, $everyIoTimeout = 8.0)
     {
         $swClient = new \swoole_client(SWOOLE_SOCK_TCP);
         $swClient->set(self::$swConfs);
-        if (!$swClient->connect($host, $port, -1))
+        if (!$swClient->connect($host, $port, $everyIoTimeout))
         {
             throw new ClientException("connet {$host}:{$port} is failed", 100);
         }
